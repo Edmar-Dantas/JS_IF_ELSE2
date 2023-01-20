@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta de vendas</title>
+</head>
+<body>
+    <h1>A meta de vendas é de R$2000,00</h1>
+    <p id="msg"></p>
+
+    <script>
+        let nome = prompt("Digite o nome do funcionario");
+        let totalVendas = Number(prompt("Digite o total de vendas do funcionario"));
+
+        if (totalVendas > 1999){
+            msg = nome + " ganhou um prêmio! Com total de vendas de R$" + totalVendas.toFixed(2);
+        }
+        else{
+            msg = nome + " infelizmente não ganhou o prêmio";
+        }
+
+        document.getElementById("msg").innerHTML = msg;
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diferença</title>
+</head>
+<body>
+    <h1>Diferença entre <span id="num1"></span> e <span id="num2"></span></h1>
+    <p id="msg"></p>
+
+    <script>
+        let num1 = Number(prompt("Digite o primeiro número"));
+        let num2 = Number(prompt("Digite o segundo número"));
+
+        if (num1 < num2){
+        reserva = num1;
+        num1 = num2;
+        num2 = reserva;
+        }
+
+        msg = "A diferença entre os dois é de " + (num1 - num2);
+        document.getElementById("msg").innerHTML = msg;
+
+    </script>
+</body>
+</html>
